@@ -1,0 +1,45 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+body {
+	font-family: sans-serif;
+}
+
+.sloupec {
+	padding: 20px;
+}
+
+.volnaMista	{ background-color: #2ecc71; }
+.oteviraciDoba	{ background-color: #f1c40f; }
+.upcoming			{ background-color: #3498db; }
+.otevritZavoru	{ background-color: #e74c3c; }
+.Kontakty	{ background-color: #9b59b6; }
+
+/* ---------------------------------------------------- */
+.parkovani {
+	display: grid;
+	grid-template-columns: 200px auto 250px;
+	grid-template-rows: 200px auto 100px;
+	gap: 10px;
+
+}
+.volnaMista{
+	grid-column: 1/4;
+	grid-row: 1;
+}
+.oteviraciDoba{
+	grid-column: 1;
+	grid-row: 2;
+}
+.upcoming{
+	grid-column: 3;
+	grid-row: 2;
+}
+.otevritZavoru{
+	grid-column: 1;
+	grid-row: 2;
+}
+.Kontakty{
+    grid-template-columns: 1/4;
+    grid-row: 1;
+}
